@@ -5,8 +5,6 @@ const parentList = document.querySelector('ul');
 
 /**
  * Helper function for turning a salary string into a valid integer.
- * @param {*} Node
- * @returns Integer
  */
 function getSalaryInt(item) {
   const salaryString = item.dataset.salary.replace(/,/g, '').replace('$', '');
@@ -15,7 +13,7 @@ function getSalaryInt(item) {
 }
 
 /**
- * Function thaat sorts emploees nodel by salary in descending order
+ * Function that sorts employees nodel by salary in descending order
  * and updates DOM.
  */
 function sortList(list) {
